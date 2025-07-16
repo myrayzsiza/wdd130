@@ -1,16 +1,25 @@
 .hero {
-  background-image: url("/images/hero.jpg"); /* Replace with your actual image path */
+  background-image: url("../images/hero.jpg");
   background-size: cover;
   background-position: center;
-  height: 400px;
+  background-repeat: no-repeat;
+  height: 100vh; /* full screen height */
+  width: 100vw;  /* full screen width */
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: white;
   text-align: center;
-  padding: 20px;
+  color: white;
+  padding: 2rem;
 }
+
+
 footer {
   background-color: #264969;
   color: white;
@@ -48,21 +57,8 @@ h1, h2 {
   color: var(--secondary-color);
 }
 
-/* Step 3: Hero Section */
-.hero {
-  background-image: url("../images/hero.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 400px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  text-align: center;
-  padding: 20px;
-}
 
-/* Step 4: Footer */
+/* Step 3: Footer */
 footer {
   background-color: var(--secondary-color);
   color: white;
@@ -106,4 +102,8 @@ nav, p, section, article {
 }
 .socialmedia a {
     text-decoration: none;
+}
+
+.p{
+  color: var(--primary-color);
 }
