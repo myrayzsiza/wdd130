@@ -1,5 +1,5 @@
 .hero {
-  background-image: url("images/hero.jpg"); /* Replace with your actual image path */
+  background-image: url(".images/hero.jpg"); /* Replace with your actual image path */
   background-size: cover;
   background-position: center;
   height: 400px;
