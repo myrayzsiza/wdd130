@@ -24,12 +24,14 @@
 nav {
   background-color: var(--nav-bg-color);
   padding: var(--nav-padding);
+  display: flex;         /* Makes links appear side by side */
+  gap: 1rem;             /* Optional: space between links */
 }
 
 nav a {
   color: var(--nav-link-color);
-  display: block;
   padding: var(--link-padding);
+  text-decoration: none; /* Optional: removes underline */
 }
 
 h1 {
