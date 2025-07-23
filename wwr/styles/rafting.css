@@ -148,7 +148,7 @@ h1 {
 	font-size: 1.2rem;
 }
 
-.navigation a:hover {
+.nav a:hover {
 	color: tomato;
 	font-weight: 700;
 	text-decoration: underline;
