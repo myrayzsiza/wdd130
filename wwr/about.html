@@ -1,97 +1,91 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Discover the story behind our whitewater rafting adventures. Learn how our expert guides, love for nature, and passion for thrilling river journeys make every trip unforgettable.">
-  <meta name="author" content="Raymond Bamutesiza | WDD130">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Discover the story behind our whitewater rafting adventures. Learn how our expert guides, love for nature, and passion for thrilling river journeys make every trip unforgettable." />
+  <meta name="author" content="Raymond Bamutesiza | WDD130" />
   <title>Whitewater Rafting</title>
 
   <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Georgia&display=swap" rel="stylesheet" />
 
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="styles/rafting.css">
+  <link rel="stylesheet" href="styles/rafting.css" />
 </head>
 <body>
-
-  <!-- Navigation -->
+  <!-- Header using CSS Grid -->
   <header>
-    <img src="images/logo.jpeg" alt="Sample logo">
-    <h1>Rapid River Adventures</h1>
+    <div class="logo">
+      <img src="images/logo.jpeg" alt="Logo" />
+    </div>
     <nav>
-      <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="trips.html">Services</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <ul class="navigation">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="trips.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
-      class="navigation"
     </nav>
   </header>
 
-  <!-- Main Content -->
   <main>
-    <article></article>
-
     <!-- Hero Section -->
     <div class="hero">
-      
-    </div>
+  <img src="images/hero.jpg" alt="Whitewater rafting adventure" />
+  <h1>Rapid River Adventures</h1> <!-- Overlay title -->
+  <article>
+    <img
+      src="images/happy-client.jpg"
+      alt="Happy client enjoying rafting"
+      width="125"
+    />
+    <p>
+      Our mission is to deliver unforgettable rafting adventures that bring
+      joy, challenge, and connection to nature.
+    </p>
+  </article>
+</div>
 
-    <!-- Company Title -->
-    <h1>Rapid River Adventures</h1>
-
-    <!-- Company Overview -->
-    <article>
-      <img src="images/happy-client.jpg" alt="Happy client enjoying rafting" width="300">
-      <p>
-        Our mission is to deliver unforgettable rafting adventures that bring joy, challenge, and connection to nature. 
-        (Placeholder text: Lorem ipsum dolor sit amet, rafting is awesome, etc.)
-      </p>
-    </article>
-
-    <!-- Company History Section -->
-    <section>
+    <!-- History Section -->
+    <section class="history">
       <h2>History</h2>
       <p>
-        Rapid River Adventures began as a dream between friends who loved the thrill of the river. 
-        (Placeholder: Founded in the year of the raft, adventures happened, now we're epic.)</p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vulputate
+        commodo lectus, ac blandit elit tincidunt id...
+      </p>
+      <img src="images/history.jpg" alt="Rafting history photo" />
     </section>
 
-    <!-- Adventure Gallery Section -->
-    <section>
+    <!-- Adventure Section -->
+    <section class="adventures">
       <h2>Adventure Awaits You!</h2>
-      <img src="images/rafting1.jpg" alt="Rafting adventure 1" width="200">
-      <img src="images/rafting2.jpg" alt="Rafting adventure 2" width="200">
-      <img src="images/rafting3.jpg" alt="Rafting adventure 3" width="200">
-      <img src="images/rafting4.jpg" alt="Rafting adventure 4" width="200">
-      <img src="images/rafting5.jpg" alt="Rafting adventure 5" width="200">
+      <div class="adventure-gallery">
+        <img src="images/rafting1.jpg" alt="Los Dientes del Diablo" />
+        <img src="images/rafting2.jpg" alt="Big Mallard" />
+        <img src="images/rafting3.jpg" alt="Half Day Adventure" />
+        <img src="images/rafting4.jpg" alt="Dead Man’s Drop" />
+        <img src="images/rafting5.jpg" alt="Devil’s Washbowl" />
+      </div>
     </section>
-
   </main>
 
-  <!-- Footer -->
   <footer>
     <p>&copy; 2025 Rapid River Adventures | Raymond Bamutesiza</p>
-
     <nav class="socialmedia">
       <a href="https://facebook.com" target="_blank">
-        <img src="images/facebook.png" alt="Facebook" width="30">
+        <img src="images/facebook.png" alt="Facebook" width="30" />
       </a>
       <a href="https://twitter.com" target="_blank">
-        <img src="images/twitter.png" alt="Twitter" width="30">
+        <img src="images/twitter.png" alt="Twitter" width="30" />
       </a>
       <a href="https://instagram.com" target="_blank">
-        <img src="images/instagram.png" alt="Instagram" width="30">
+        <img src="images/instagram.png" alt="Instagram" width="30" />
       </a>
     </nav>
   </footer>
-<!-- End of Footer -->
-
-  <!-- JavaScript -->
-  <script src="scripts/main.js"></script>
 </body>
 </html>

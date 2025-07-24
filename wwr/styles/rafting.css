@@ -1,89 +1,28 @@
-.hero {
-  background-image: url("../images/hero.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh; /* full screen height */
-  width: 100vw;  /* full screen width */
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: white;
-  padding: 2rem;
-}
-
-
-footer {
-  background-color: #264969;
-  color: white;
-  text-align: center;
-  padding: 20px;
-}
-
-footer .socialmedia img {
-  margin: 0 10px;
-  vertical-align: middle;
-}
-/* rafting.css */
-
-/* Step 1: Define my color variables */
+/* Color and Font Variables */
 :root {
-  
   --primary-color: #06aed5;
   --secondary-color: #086788;
   --accent1-color: #f0c808;
   --accent2-color: #fff1d0;
   --accent3-color: #dd1c1a;
+
+  --heading-font: Georgia, serif;
+  --body-font: Roboto, sans-serif;
 }
 
-/* Step 2: Basic Styles for body and headings */
-body {
-  font-family: Roboto, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: var(--accent1-color);
-  color: var(--primary-color);
-}
-
-h1, h2 {
-  font-family: Georgia, serif;
-  color: var(--secondary-color);
-}
-
-
-/* Step 3: Footer */
-footer {
-  background-color: var(--secondary-color);
-  color: white;
-  text-align: center;
-  padding: 20px;
-}
-
-footer .socialmedia img {
-  margin: 0 10px;
-  vertical-align: middle;
-}
-header {
-    background-color: var(--primary-color);
-    color: var(--accent2-color);
-  }
-  
-  * {
+/* Reset and Base Layout */
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  font-family: var(--body-font);
-  color: var(--accent1-color);
+  font-family: var(--body-font), Arial, sans-serif;
+  background-color: var(--accent1-color);
+  color: var(--primary-color);
+  margin: 0;
+  padding: 0;
 }
 
 header, main, footer {
@@ -96,73 +35,183 @@ h1, h2 {
   color: var(--primary-color);
 }
 
+/* Hero Section */
+.hero {
+  background-image: url("../images/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 2rem;
+  overflow: hidden;
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hero article {
+  position: absolute;
+  bottom: 40px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 16px;
+  max-width: 500px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  color: black;
+}
+
+.hero article img {
+  float: right;
+  width: 125px;
+}
+
+/* Header */
+header {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
+  padding: 1rem 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Logo */
+.logo img {
+  margin: 0 0.25rem 0 1rem;
+  width: 64px;
+  height: auto;
+}
+
+/* Headings */
+h1 {
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  opacity: 0.7;
+  background-color: var(--accent1-color);
+  color: #fff;
+  font-size: 2.5rem;
+  z-index: 10;
+}
+
+/* Navigation */
+.navigation {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 2rem;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navigation li {
+  flex: 1 1 auto;
+}
+
+.navigation a {
+  display: block;
+  color: navy;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.nav a:hover {
+  color: tomato;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+/* Page Content Styling */
 nav, p, section, article {
   margin: 16px;
   padding: 8px;
 }
-.socialmedia a {
-    text-decoration: none;
-}
-
-.p{
-  color: var(--primary-color);
-}
-
-header {
-	margin: 1rem auto;
-	display: grid;
-	grid-template-columns: 120px 1fr 1fr;
-	align-items: center;
-	border-bottom: 1px solid #ccc;
-	max-width: 1000px;
-}
-
-.logo img {
-	margin: 0 0.25rem 0 1rem;
-	width: 64px;
-	height: auto;
-}
-
-h1 {
-	font-size: 2rem;
-	font-family: Acme, Arial, sans-serif;
-}
-
-.navigation {
-	display: flex;
-	flex-wrap: wrap;
-	list-style: none;
-	padding: 0;
-	font-family: Arial, sans-serif;
-}
-
-.navigation li {
-	flex: 1 1 auto;
-}
-
-.navigation a {
-	display: block;
-	color: navy;
-	padding: 20px;
-	text-decoration: none;
-	font-size: 1.2rem;
-}
-
-.nav a:hover {
-	color: tomato;
-	font-weight: 700;
-	text-decoration: underline;
-}
-
-body {
-	font-family: Acme, Arial, sans-serfi;
-}
 
 article {
-	margin: 1em auto;
-	border: 1px solid rgb(0 0 0 / 10%);
-	padding: 1em;
-	background-color: #ace;
-	width: min(600px, 100%);
-	font-size: 1.2rem;
+  margin: 1em auto;
+  border: 1px solid rgb(0 0 0 / 10%);
+  padding: 1em;
+  background-color: #ace;
+  width: min(600px, 100%);
+  font-size: 1.2rem;
+}
+
+/* Footer */
+footer {
+  background-color: var(--secondary-color);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+footer nav.socialmedia {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+footer .socialmedia img {
+  margin: 0 10px;
+  vertical-align: middle;
+  width: 24px;
+  height: 24px;
+}
+
+.socialmedia a {
+  text-decoration: none;
+}
+
+/* History Section - Updated Wireframe Layout */
+.history {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+  margin: 2rem 1rem;
+}
+
+.history img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Adventure Section - Grid Layout */
+.adventures {
+  margin: 2rem 1rem;
+}
+
+.adventure-gallery {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.adventure-gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
 }
