@@ -215,3 +215,9 @@ footer .socialmedia img {
   height: auto;
   border-radius: 4px;
 }
+.history-img {
+  float: right;       /* or left if you prefer */
+  width: 250px;       /* adjust as needed */
+  margin: 0 0 1em 1em; /* space around the image */
+  border-radius: 8px; /* optional rounded corners */
+}
