@@ -253,11 +253,11 @@ footer .socialmedia img {
 
 .employee-gallery figure {
   text-align: center;
-  max-width: 200px;
+  max-width: 150px;
 }
 
 .employee-gallery img {
-  width: 100%;
+  width: 70%;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
