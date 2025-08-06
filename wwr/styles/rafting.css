@@ -41,7 +41,7 @@ h1, h2 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 120vh;
   width: 100vw;
   position: relative;
   left: 50%;
@@ -131,14 +131,14 @@ h1 {
 
 .navigation a {
   display: block;
-  color: navy;
+  color: rgb(205, 205, 227);
   padding: 20px;
   text-decoration: none;
   font-size: 1.2rem;
 }
 
 .nav a:hover {
-  color: tomato;
+  color: rgb(233, 210, 206);
   font-weight: 700;
   text-decoration: underline;
 }
@@ -186,21 +186,47 @@ footer .socialmedia img {
 
 /* History Section - Updated Wireframe Layout */
 .history {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  align-items: center;
-  margin: 2rem 1rem;
+  background-color: gold;
+  color: #003366;
+  padding: 2rem;
+  width: 100%;
 }
 
-.history img {
-  width: 100%;
-  border-radius: 8px;
+.history h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #003366;
+  text-align: center;
 }
+
+.history-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  align-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.history-grid img {
+  width: 00%; /* Makes the image fill its grid cell */
+  height: auto;
+  border: 0px;
+}
+
+
 
 /* Adventure Section - Grid Layout */
 .adventures {
   margin: 2rem 1rem;
+  color: var(--secondary-color);
+
+}
+.adventures h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: var(--secondary-color);
 }
 
 .adventure-gallery {
@@ -341,4 +367,107 @@ footer a:hover {
   width: 100%;
   height: 300px;
   border: 0px;
+}
+/* rafting.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #064663;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.logo {
+  height: 50px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.hero {
+  position: relative;
+  width: 150%;
+  height: 420px;
+  overflow: hidden;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2.5rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+}
+
+.cta {
+  text-align: center;
+  background-color: #dff6ff;
+  padding: 2rem;
+}
+
+.cta .btn {
+  background-color: #064663;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.newsletter {
+  background-color: #f1f1f1;
+  padding: 2rem;
+  text-align: center;
+}
+
+.newsletter form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  max-width: 400px;
+  margin: auto;
+}
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #ffffff;
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+}
+
+footer {
+  background-color: #064663;
+  color: white;
+  text-align: center;
+  padding: 1rem;
 }
