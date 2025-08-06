@@ -123,6 +123,7 @@ h1 {
   gap: 2rem;
   justify-content: flex-end;
   align-items: center;
+  text-decoration: underline;
 }
 
 .navigation li {
@@ -133,7 +134,7 @@ h1 {
   display: block;
   color: rgb(205, 205, 227);
   padding: 20px;
-  text-decoration: none;
+  text-decoration: underline;
   font-size: 1.2rem;
 }
 
@@ -470,4 +471,117 @@ footer {
   color: white;
   text-align: center;
   padding: 1rem;
+}
+/* === TRIPS PAGE STYLES === */
+
+/* CTA Section */
+.cta {
+  padding-top: 4rem;
+  text-align: center;
+  padding: 2rem;
+  margin: 2rem 0;
+}
+
+.cta h1 {
+  font-size: 1.5rem;
+  margin-bottom: 2.0rem;
+  text-align: justify;
+  margin-top: 9.0rem;
+  background-color: transparent;
+  color: var(--secondary-color);
+}
+
+.cta p {
+  font-size: 1.2rem;
+  color: var(--secondary-color);
+}
+
+.cta a {
+  color: var(--accent3-color);
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.cta a:hover {
+  color: var(--primary-color);
+}
+
+/* Trip Descriptions Section */
+.trip-descriptions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.trip-descriptions article {
+  background-color: var(--accent2-color);
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.trip-descriptions img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.trip-descriptions h2 {
+  color: var(--secondary-color);
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.trip-descriptions p {
+  color: var(--primary-color);
+  font-size: 1rem;
+}
+
+/* Trip Table Section */
+.trip-table {
+  padding: 2rem;
+  margin: 2rem 0;
+  background-color: var(--accent2-color);
+  border-radius: 8px;
+}
+
+.trip-table h2 {
+  text-align: center;
+  color: var(--secondary-color);
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.trip-table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1.1rem;
+  background-color: #fff;
+}
+
+.trip-table th,
+.trip-table td {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  text-align: center;
+}
+
+.trip-table th {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.trip-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.trip-table tr:hover {
+  background-color: #e6f7ff;
 }
